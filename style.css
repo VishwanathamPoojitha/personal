@@ -9,19 +9,40 @@ body{
     margin: 30px;
     cursor: pointer;
     float: right;
+    margin-right: 70px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.nav-section nav a{
+  color: white;
+  text-decoration: none;
+  
+}
+ .resume{
+  
+  margin-left: 40px;
+  padding: 10px;
+ 
+
+}
+.nav-section:hover{
+  background-color: #9e105e;
 }
 
 .Intro-section{
   display: grid;
   grid-template-columns: 3fr 2fr;
-  gap: 250px;
+  gap: 190px;
 
 }
 .text-content{
   color: white;
-  padding-top: 150px;
+  padding-top: 15px;
   margin-left: 50px;
   width: 450px;
+  margin-right: 40px;
 }
 .text-content h1{
   font-size: 25px;
@@ -29,21 +50,60 @@ body{
 }
 .text-content a{
   text-decoration: none;
+  color: white;
+  size: 20px;
 }
-.image-content{
-  padding-top:150px ;
+.text-content a i{
+  padding: 10px;
+}
+.text-content a i:hover{
+  border: 1px solid rgb(17, 208, 233);
+  transform: scale(1.05);
+}
+
+.profile-img {
+  width: 120px; /* Ensure the image fits */
+  height: 128px;
+  border-radius: 50%; /* Makes it circular */
+  padding: 10px;
+  border: 2px solid transparent; /* Initial border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  animation: borderAnimation 3s infinite linear;
   margin-top: 20px;
-  border: 10px;
-  border-radius: 50px;
-  
+  margin-right: 40px;
 }
+
+@keyframes borderAnimation {
+  0% {
+    border-color:blue; /* Red */
+  }
+  33% {
+    border-color: #6bffb0; /* Green */
+  }
+  66% {
+    border-color: #6b9eff; /* Blue */
+  }
+  100% {
+    border-color:violet; /* Back to Red */
+  }
+}
+
 .about-me{
   margin-left: 50px;
   color: white;
+  font-size: 15px;
+  margin-right: 40px;
+
+  
 }
 .intern{
   margin-left: 50px;
   color: white;
+  margin-right: 50px;
+  
+}
+.intern p{
+  font-size: 15px;
 }
 .intern h2{
   margin-top: 40px;
@@ -51,10 +111,14 @@ body{
 .container-box{
   display: flex;
   margin-left: 40px;
-  gap: 20px;
+  gap: 40px;
   align-content: center;
-  margin-top: 30px;
+  margin-top: 40px;
   justify-content: center;
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: 15px;
+  margin-right: 40px;
 }
 /* From Uiverse.io by ElSombrero2 */ 
 .card {
@@ -236,10 +300,13 @@ body{
 .new-one{
  margin-left: 40px;
  display: flex;
- gap: 90px;
- 
+ gap: 150px;
+ border: 1px solid white;
+ border-radius: 2px;
+ padding: 30px;
  margin-top: 30px;
  justify-content: center;
+ margin-right: 40px;
 } 
 .container {
   position: relative;
@@ -291,13 +358,101 @@ body{
   margin-left: 40px;
   gap: 10px;
   justify-content: center;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: 15px;
+  margin-right: 40px;
 }
 .tech{
   color:white;
   margin-top: 30px;
-  margin-top: 40px;
+  margin-left: 40px;
+ 
 }
 
 hr{
   margin-top: 40px;
+}
+.contact-info{
+  margin-left: 40px;
+  margin-right: 40px;
+  color: white;
+  margin-top: 30px;
+}
+.personal-info{
+  margin-left: 40px;
+  margin-right: 40px;
+  color: white;
+  
+}
+.personal-info h4 a{
+  text-decoration: none;
+  color:skyblue;
+}
+.input-form{
+  margin-left: 40px;
+  margin-right: 40px;
+  color: white;
+  
+}
+.input-form {
+ 
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-form label {
+  color: white; /* Text color for labels */
+  font-size: 16px;
+}
+
+.input-form input, .input-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+  background: transparent; /* Transparent fields */
+  color: white; /* Text color */
+  border-radius: 5px;
+  outline: none;
+}
+
+.input-form input::placeholder, 
+.input-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Light placeholder text */
+}
+
+.input-form button {
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background: transparent; /* Add if needed */
+  padding: 10px 15px; /* Add for better styling */
+  width: 100%;
+}
+
+#submitBtn:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
+.main-info{
+  display: flex;
+  padding-top: 10px;
+  gap: 40px;
+  justify-content: center;
+}
+footer{
+  margin-left: 40px;
+  margin-right: 40px;
+  color:gray;
+  text-align: center;
+  margin-bottom: 20px;
 }

@@ -10,16 +10,19 @@
 </head>
 <body>
     <div class="nav-section">
-   
-   <nav><a href=""></a>RESUME</nav>
-  
-   
+    <nav>
+      <a href="./VISHWANATHAM_POOJITHA.pdf" target="_blank">RESUME</a>
+    </nav><br>
     </div>
 
+    <div class="resume">
+      <img src="./resume.png" height="50px" alt="">
+     </div>
+ <br>
     <div class="Intro-section">
       <div class="text-content">
-  <h1>Hi, I'm Vishwanatham Poojitha</h1>
-  <h3>Frontend Developer</h3>
+  <h1 id="typing-text"></h1>
+  <h3>👩‍💻Frontend Developer</h3>
   <p>~As a Frontend Developer,
     I transform ideas into visually stunning and seamless digital experiences, 
     ensuring user-friendly interfaces that leave a lasting impression.~</p>
@@ -31,14 +34,14 @@
   </div>
   
     <div class="image-content">
-     <img src="./pooja.jpeg.png"  height="200px" >
+     <img src="./pooja.jpeg.png" class="profile-img " >
   </div>
 </div>
 
   
     <div class="about-me">
         <h1>About Me:-</h1>
-        <p>"I, Vishwanatham Poojitha, am passionate about front-end development and actively pursuing opportunities as a Front-End Developer. I enjoy building responsive, user-friendly web applications using modern technologies like HTML, CSS, JavaScript, React, and Next.js."</p>
+        <p>"I, Vishwanatham Poojitha, am passionate about front-end development and actively pursuing opportunities as a Front-End Developer. I enjoy building responsive, user-friendly web applications using modern technologies like HTML, CSS, JavaScript, ReactJs,TailwindCss,BootStrap."</p>
     </div>
     
 
@@ -201,7 +204,7 @@
   </div>
 </div>
    </div>
-   <hr>
+   
 
   <div class="project">
     <h2>Projects</h2>
@@ -228,8 +231,8 @@
       ></path>
     </svg>
   </div>
-  <div data-text="Live" style="--r:25;" class="glass">
-    <a href="http://netflix-web-ol2h.vercel.app/" style="text-decoration: none;">Live</a>
+  <div data-text="Explore the Project" style="--r:25;" class="glass">
+    <a href="http://netflix-web-ol2h.vercel.app/" style="text-decoration: none; color: white; font-size: medium;">Live</a>
       <path
         d="M64 64C28.7 64 0 92.7 0 128V384c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H64zm64 320H64V320c35.3 0 64 28.7 64 64zM64 192V128h64c0 35.3-28.7 64-64 64zM448 384c0-35.3 28.7-64 64-64v64H448zm64-192c-35.3 0-64-28.7-64-64h64v64zM288 160a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"
       ></path>
@@ -253,8 +256,8 @@
       ></path>
     </svg>
   </div>
-  <div data-text="Live" style="--r:25;" class="glass">
-    <a href="http://ai-trip-planner-web-e16d.vercel.app/" style="text-decoration: none;">Live</a>
+  <div data-text="Explore the Project" style="--r:25;" class="glass">
+    <a href="http://ai-trip-planner-web-e16d.vercel.app/" style="text-decoration: none; color: white; font-size: medium;">Live</a>
       <path
         d="M64 64C28.7 64 0 92.7 0 128V384c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H64zm64 320H64V320c35.3 0 64 28.7 64 64zM64 192V128h64c0 35.3-28.7 64-64 64zM448 384c0-35.3 28.7-64 64-64v64H448zm64-192c-35.3 0-64-28.7-64-64h64v64zM288 160a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"
       ></path>
@@ -265,10 +268,10 @@
   </div>
 
 
-  <hr>
+ 
   
   <div class="tech">
-    <h2>Technical SKILLS</h2>
+    <h2>Technical Skills</h2>
   </div>
   
   <div class="Technologies">
@@ -284,5 +287,55 @@
     <IMG src="./vs.jpg" height="60px"></IMG>
   </div>
 
+ 
+  <div class="contact-info">
+   <h2>Get In Touch</h2>
+   
+  </div>
+  <div class="main-info"> 
+  <div class="personal-info">
+    <h3>📞 Contact Details:</h3>
+    <h4>📧 Email: <a href="mailto:vishvanathampoojitha@gmail.com">vishvanathampoojitha@gmail.com</a></h4>
+    <h4>☎️ Phone Number: 91-8186813330</h4>
+    <h4></h4>
+  </div>
+  <div class="input-form">
+    <form id="contactForm">
+      <label>Name:</label>
+      <input type="text" id="name" required><br>
+
+      <label>Email:</label>
+      <input type="email" id="email" required><br>
+
+      <label>Message:</label>
+      <textarea id="message" required></textarea><br>
+
+      <button type="button" id="submitBtn">Submit</button>
+  </form>
+
+  <p id="successMsg" style="color: limegreen; display: none;">Message sent successfully!</p>
+
+</div>
+
+</div>
+
+  <footer> "Designed & Built by Vishwanatham Poojitha" © 2025, Vishwanatham Poojitha</footer>
+
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
+
+  <!-- Your script.js file -->
+  <script type="module" src="script.js"></script>
+
+
+
+  
+
+
+
+
+</body>
   
 
