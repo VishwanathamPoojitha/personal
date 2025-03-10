@@ -68,16 +68,19 @@ function validateEmail(email) {
 }
 
 
-  function closePopup() {
-    document.getElementById("popup").style.display = "none";
-  }
+document.addEventListener("DOMContentLoaded", function () {
+    let popup = document.getElementById("popup");
+    let closeButton = document.getElementById("closeButton");
 
-  window.onload = function() {
-    if (window.innerWidth < 768) {
-      document.getElementById("popup").style.display = "flex";
-
-      
-      document.getElementById("closeButton").addEventListener("click", closePopup);
+    if (window.innerWidth < 768) {  // Show only on mobile
+        popup.style.display = "flex";  
     }
-  };
+
+    if (closeButton) {
+        closeButton.addEventListener("click", function () {
+            popup.style.display = "none";  // Hide popup when button is clicked
+        });
+    }
+});
+
 

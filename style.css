@@ -500,3 +500,11 @@ margin-bottom: 20px;
 .popup-content button:hover {
   background: rgba(0, 123, 255, 0.8);
 }
+@media (max-width: 768px) {
+  #popup {
+      display: flex;  /* Show popup only on mobile */
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+}
